@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 6rem;
 
   &:not(:last-child) {
     margin-bottom: var.$gutter-vertical;
