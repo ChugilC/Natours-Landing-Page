@@ -3,6 +3,7 @@
 .btn {
   z-index: 0;
 
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -13,6 +14,9 @@
     transition: all 0.2s ease;
     position: relative;
     font-size: var.$default-font-size;
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -25,7 +29,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(var.$color-black, 0.2);
   }
