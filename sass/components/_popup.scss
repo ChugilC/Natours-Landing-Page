@@ -60,6 +60,10 @@
   &__left {
     width: 33.3333%;
     display: table-cell;
+
+    @include mix.respond(tab-port) {
+      display: none;
+    }
   }
 
   &__right {
