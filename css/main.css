@@ -181,10 +181,11 @@ body {
   text-align: center;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   color: transparent;
   letter-spacing: 2px;
+  position: relative;
 }
 @media only screen and (max-width: 56.25em) {
   .heading-secondary {
@@ -199,7 +200,9 @@ body {
 .heading-secondary--span {
   display: inline-block;
   transition: all 0.2s ease;
-  position: relative;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .heading-secondary:hover .heading-secondary--span {
   transform: translateY(-10px);

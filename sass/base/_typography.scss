@@ -53,8 +53,10 @@ body {
     var.$color-primary-dark
   );
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
+  position: relative;
 
   @include mix.respond(tab-port) {
     font-size: 3rem;
@@ -67,7 +69,14 @@ body {
   &--span {
     display: inline-block;
     transition: all 0.2s ease;
-    position: relative;
+    // position: relative;
+    background-image: linear-gradient(
+      to right,
+      var.$color-primary-light,
+      var.$color-primary-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
   &:hover &--span {
