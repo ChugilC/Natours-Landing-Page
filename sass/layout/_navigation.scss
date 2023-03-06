@@ -14,7 +14,7 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
-    z-index: 4;
+    z-index: 5;
     box-shadow: 0 1rem 2rem rgba(var.$color-black, 0.15);
     text-align: center;
     cursor: pointer;
@@ -41,7 +41,7 @@
       var.$color-primary-light,
       var.$color-primary-dark
     );
-    z-index: 2;
+    z-index: 3;
     transition: all 0.8s ease;
 
     @include mix.respond(tab-port) {
@@ -60,7 +60,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 4;
 
     opacity: 0;
     width: 0;

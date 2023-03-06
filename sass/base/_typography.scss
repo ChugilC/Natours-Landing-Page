@@ -45,6 +45,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
   display: inline-block;
   background-image: linear-gradient(
     to right,
@@ -64,12 +65,12 @@ body {
   }
 
   &--span {
+    display: inline-block;
     transition: all 0.2s ease;
     position: relative;
   }
 
   &:hover &--span {
-    display: inline-block;
     transform: translateY(-10px);
     text-shadow: 0.5rem 1rem 1rem rgba(var.$color-black, 0.2);
 
